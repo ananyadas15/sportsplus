@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
+@SpringBootApplication //starting point
 @ComponentScan("com.cse") // search for all the beans in the packages
 @EnableJpaRepositories(basePackages = "com.cse") // enables the jpa repo for the base package
 @EntityScan("com.cse")  // looks for all the objects that have @Entity above it
